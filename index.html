@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+          <!--formulário-->    
+    <div class="container">
+        <h1>Controle de Gastos Bancários</h1>
+        <form id="formGasto">
+            <input type="date" id="data" required>
+            <input type="text" id="valor" placeholder="Valor" required>
+            <select id="cartao">
+                <option value="PickPay">PickPay</option>
+                <option value="Will">Will</option>
+                <option value="Nubank">Nubank</option>
+            </select>
+
+          <!--botões-->
+            <button type="submit">Adicionar Gasto</button>
+            <button type="button" id="limparCampos">Limpar Campos</button>
+            <button type="button" id="limpar">Limpar Informações</button>
+        </form>
+
+        <!--Seção Total--> 
+        <h2>Gastos</h2>
+        <ul id="listaGastos"></ul>
+
+        <div class="total">
+        <h2>Total</h2>
+        <p id="totalGastos">Total de Gastos: R$ 0.00</p>
+        <p id="gastosCartoes"></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy - 2024</p>
+        <p>Desenvolvido por Clenir Ysita</p>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
+
+    
